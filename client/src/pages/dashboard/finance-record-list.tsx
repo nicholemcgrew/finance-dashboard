@@ -19,7 +19,7 @@ export const FinancialRecordList = () => {
           ))}
         </thead>
 				<tbody {...getTableBodyProps()}>
-          {rows.map((row, index) => {
+          {rows.map((row, idx) => {
             prepareRow(row)
             return <tr {...row.getRowProps()}></tr>
           })}
